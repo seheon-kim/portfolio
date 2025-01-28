@@ -1,1 +1,30 @@
-hello world
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tailwind CSS with Cloudflare</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script>
+		tailwind.config = {
+			theme: {
+				extend: {
+					colors: {
+						customBlue: '#1e40af',
+					},
+				},
+			},
+		};
+	</script>
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+	<div class="flex items-center justify-center h-screen">
+		<h1 class="text-4xl font-bold text-customBlue">
+			Hello, Tailwind CSS with Cloudflare Pages!
+		</h1>
+	</div>
+</body>
+
+</html>
